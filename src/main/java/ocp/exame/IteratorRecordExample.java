@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 public class IteratorRecordExample {
 
-    record Fruit(String name, String type) {
+    private record Fruit(String name, String type) {
         Fruit(String name, String type) {
             this.name = name;
             this.type = type;
