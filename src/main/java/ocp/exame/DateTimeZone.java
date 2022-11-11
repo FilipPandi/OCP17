@@ -8,7 +8,7 @@ public class DateTimeZone {
 
     public static void main(String[] args) {
         var localDate = LocalDate.of(2022, 3, 13);
-        var localTime = LocalTime.of(1, 0);
+        var localTime = LocalTime.of(13, 0);
 
         var zone = ZoneId.of(AMERICA_NEW_YORK);
         var z = ZonedDateTime.of(localDate, localTime, zone);
