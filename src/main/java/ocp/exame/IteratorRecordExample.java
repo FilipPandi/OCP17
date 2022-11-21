@@ -3,15 +3,11 @@ package ocp.exame;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.*; //WILDCARD (*)
 
 public class IteratorRecordExample {
 
     private record Fruit(String name, String type) {
-        Fruit(String name, String type) {
-            this.name = name;
-            this.type = type;
-        }
-
         @Override
         public String toString() {
             return "Fruit{" +
@@ -32,12 +28,12 @@ public class IteratorRecordExample {
     }
 
     private static Collection<Fruit> toList() {
-        Collection<Fruit> listOfAnimals = new ArrayList<>();
-        listOfAnimals.add(new Fruit("Banana",  "Tropical"));
-        listOfAnimals.add(new Fruit("Apple",  "Common"));
-        listOfAnimals.add(new Fruit("Orange",  "Citrus"));
+        Collection<Fruit> fruits = new ArrayList<>();
+        fruits.add(new Fruit("Banana",  "Tropical"));
+        fruits.add(new Fruit("Apple",  "Common"));
+        fruits.add(new Fruit("Orange",  "Citrus"));
 
 
-        return listOfAnimals;
+        return fruits;
     }
 }
