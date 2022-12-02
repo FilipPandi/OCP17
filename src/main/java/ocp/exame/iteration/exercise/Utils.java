@@ -8,6 +8,7 @@ import ocp.exame.iteration.exercise.model.ObjectDto;
 import java.math.BigDecimal;
 import java.util.*;
 
+//Output should be "ID | YEAR / NUMBER" - exercise trying to iterate nested lists.
 public class Utils {
     public static void main(String[] args) {
         List<ObjectA> objectAList = setAList();
@@ -32,7 +33,9 @@ public class Utils {
             }
         });
 
-        System.out.println("LIST A = " + objectDtos + "\n");
+        objectDtos.forEach(objectDto -> {
+            System.out.println("OUTOUT = (" + objectDto.getId() + " | " + objectDto.getObjectB2().getYear() + " / " + objectDto.getObjectB2().getNubmer() + ")");
+        });
     }
 
 
