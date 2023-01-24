@@ -1,0 +1,24 @@
+BULDING BLOCKS
+1.) D, E (main method can be final)
+2.) C, D, E 
+3.) A, E
+4.) B, E, G
+5.) A, D, F
+6.) F
+7.) D, E
+8.) B, D, G, E (E - it is runtime error not compiler error, devide by 0)
+9.) E
+10.) A, E, F
+11.) E
+12.) A, C, D
+13.) A, B, C
+14.) A, B, D, E
+15.) C, E, F
+16.) A, D
+17.) D, F, G
+18.) B, C, F
+19.) A, D
+20.) C
+21.) D
+22.) C, F, G (0b is prefix for binary value and 0x is prefix for hexadecimal)
+23.) A, D
