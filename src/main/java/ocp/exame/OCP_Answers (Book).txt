@@ -22,3 +22,26 @@ BULDING BLOCKS
 21.) D
 22.) C, F, G (0b is prefix for binary value and 0x is prefix for hexadecimal)
 23.) A, D
+
+OPERATORS
+1.) A, D, G
+2.) A, D, B -
+3.) B, D, F, C -
+4.) B
+5.) A, C -
+6.) F
+7.) D
+8.) A -
+9.) A, D, E -
+10.) G -
+11.) D
+12.) D
+13.) F -
+14.) B, E, G -
+15.) D
+16.) B -
+17.) C, F
+18.) C
+19.) F, B -
+20.) A, D, E -
+21.) E -
