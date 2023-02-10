@@ -9,6 +9,12 @@ public class OperatorsExercise {
 
         int ban = apples + oranges;
         float ban2 = apples + oranges;
-        float ban3 = apples + oranges;
+        double ban3 = apples + oranges;
+        long ban4 = apples + oranges;
+
+        long x = 10;
+        long h = 2 * x;
+
+
     }
 }
