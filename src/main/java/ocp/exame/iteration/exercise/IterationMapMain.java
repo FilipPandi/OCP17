@@ -6,10 +6,13 @@ import ocp.exame.iteration.exercise.model.ObjectB2;
 import ocp.exame.iteration.exercise.model.ObjectDto;
 
 import java.math.BigDecimal;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 //Output should be "ID | YEAR / NUMBER" - exercise trying to iterate nested lists.
-public class Utils {
+public class IterationMapMain {
     public static void main(String[] args) {
         List<ObjectA> objectAList = setAList();
         Map<Long, ObjectDto> longObjectDtoMap = new HashMap<>();
@@ -33,9 +36,7 @@ public class Utils {
             }
         });
 
-        objectDtos.forEach(objectDto -> {
-            System.out.println("OUTOUT = (" + objectDto.getId() + " | " + objectDto.getObjectB2().getYear() + " / " + objectDto.getObjectB2().getNubmer() + ")");
-        });
+        objectDtos.forEach(objectDto -> System.out.println("OUTOUT = (" + objectDto.getId() + " | " + objectDto.getObjectB2().getYear() + " / " + objectDto.getObjectB2().getNubmer() + ")"));
     }
 
 
