@@ -75,5 +75,45 @@ public class DecisionStatementsAndLoopsExercise {
             hungry--; //3, 0
             System.out.println("Hungry: " + hungry + ", ");
         }
+
+
+        //breaks in loops using optional labels
+        int[][] list = {{1, 13}, {5, 2}, {2, 2}};
+        int sv = 2;
+        int pox = -1;
+        int poy = -1;
+
+        PARENT_LOOP:
+        for (int i = 0; i < list.length; i++) {
+            for (int j = 0; j < list[i].length; j++) {
+                if (list[i][j] == sv) {
+                    pox = i;
+                    poy = j;
+                    System.out.println("LOOP i: " + i + " ,j: " + j);
+
+                    break PARENT_LOOP; //Different result for each break
+//                    break CHILD_LOOP;
+//                    break;
+                }
+            }
+        }
+        if (pox == -1 || poy == -1) {
+            System.out.println("Value " + sv + " not found!");
+        } else {
+            System.out.println("Value " + sv + " found at: " + "(" + pox + ", " + poy + ")");
+        }
+
+        //continue statements in loops
+        CLEANING:
+        for (char stables = 'a'; stables <= 'd'; stables++) { //a, b, c, d
+            for (int leobard = 1; leobard < 4; leobard++) { // 1 - 3
+                if (stables == 'b' || leobard == 2) {
+                    continue CLEANING;
+//                    continue; - control is returned to inner loop (ANIMAL_LOOP), the same thing would be "continue ANIMAL_LOOP;".
+                }
+                System.out.println("Cleaning: " + stables + ", " + leobard);
+            }
+
+        }
     }
 }
