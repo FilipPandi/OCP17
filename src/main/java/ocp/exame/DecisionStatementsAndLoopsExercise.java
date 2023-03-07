@@ -8,7 +8,6 @@ public class DecisionStatementsAndLoopsExercise {
             System.out.println(data.compareTo(5));
         }
     }
-
     public static void main(String[] args) {
         compareIntegers(2);
 
@@ -41,9 +40,9 @@ public class DecisionStatementsAndLoopsExercise {
 
         //Switch with arrow operator (arrow operator works like break - IT IS NOT LAMBDA).
         switch (counter) {
-            case 1 -> System.out.println("it is one!");
-            case 2 -> System.out.println("it is two!");
-            case 3 -> System.out.println("it is three!");
+            case 1, 5 -> System.out.println("it is one!");
+            case 2, 7 -> System.out.println("it is two!");
+            case 3, 8 -> System.out.println("it is three!");
             default -> System.out.println("I'm default!");
         }
 
@@ -115,5 +114,13 @@ public class DecisionStatementsAndLoopsExercise {
             }
 
         }
+
+        //Prints all elements
+        int[] weather = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        for (int i = weather.length - 1; i >= 0; i--) {
+            System.out.println(weather[i]);
+        }
+
+
     }
 }

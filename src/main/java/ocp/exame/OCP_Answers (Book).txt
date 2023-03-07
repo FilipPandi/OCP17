@@ -49,12 +49,12 @@ OPERATORS
 MAKING DECISIONS
 1.) A, B, C, E, F
 2.) F
-3.)
-4.)
-5.)
-6.)
-7.)
-8.)
+3.) C, D, H, F
+4.) C
+5.) F
+6.) A, C, E, D
+7.) D
+8.) H
 9.)
 10.)
 11.)
