@@ -3,11 +3,17 @@ package ocp.exame;
 import java.util.List;
 
 public class DecisionStatementsAndLoopsExercise {
-    private static void compareIntegers(Number number) {
-        if (number instanceof final Integer data) { // Subtype should never be the same type as parameter (data and number).
-            System.out.println(data.compareTo(5));
-        }
+
+    static void printLocation(Animal a) {
+        long type = switch (a) {
+            case BIRD -> 1;
+            case FISH -> 2;
+            case MAMMAL -> 3;
+            default -> 4;
+        };
+        System.out.println("Type: " + type);
     }
+
     public static void main(String[] args) {
         compareIntegers(2);
 
@@ -121,6 +127,41 @@ public class DecisionStatementsAndLoopsExercise {
             System.out.println(weather[i]);
         }
 
+        //Question 9. - how to get 2 in print out.
+        int count = 0;
+        for (int row = 1; row <= 3; row++)
+            for (int col = 0; col < 3; col++) {
+                if ((col + row) % 2 == 0) {
+//                    break;
+                    count++;
+                }
+            }
+        System.out.println("count: " + count);
+
+
+        printLocation(Animal.MAMMAL);
+
+        int pa = 4, animals = 2, pre = -1;
+        while ((pa = pa + 1) < 10) {
+        }
+        do {
+        } while (animals++ <= 1);
+        for (; pre < 2; pre += 2) ;
+        System.out.println("pa = " + pa + " ,animals = " + animals + " ,pre = " + pre);
+
+//        int i = 0;
+//        for(;;) {
+//            System.out.println(i++);
+//        }
+
 
     }
+
+    private static void compareIntegers(Number number) {
+        if (number instanceof final Integer data) { // Subtype should never be the same type as parameter (data and number).
+            System.out.println(data.compareTo(5));
+        }
+    }
+
+    enum Animal {BIRD, FISH, MAMMAL}
 }
