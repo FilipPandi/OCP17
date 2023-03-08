@@ -21,11 +21,13 @@ public class Summary {
             for (; j <= 5; j++) {
                 System.out.println("L2 Loop! Count: " + j);
                 if (i == 2) continue L1;
+                L3:
                 while (w > 0) {
                     System.out.println("WHILE LOOP i: " + i + " || j: " + j + " || w: " + w + "");
                     if (w > 3) {
                         break;
                     }
+                    L4:
                     do {
                         System.out.println("DOWHILE i: " + i + " || j: " + j + " || w: " + w + " || dw: " + dw + "");
                         if (dw > 3) {
