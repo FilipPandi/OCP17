@@ -155,7 +155,41 @@ public class DecisionStatementsAndLoopsExercise {
 //        }
 
 
+        int height = 1;
+        while (height++ < 10) {
+            long humidity = 12;
+            L2:
+            do {
+                if (humidity-- % 12 == 0) continue L2;
+                int temperature = 30;
+                for (; ; ) {
+                    temperature++;
+                    if (temperature > 50) continue L2;
+                }
+            } while (humidity > 4);
+        }
+
+        int id = 30;
+
+        System.out.println(switch (id) {
+            case 10 -> {
+                yield "jane";
+            }
+            case 20 -> {
+                yield "Lisa";
+            }
+            case 30 -> "Kelly";
+            default -> "unssigned";
+        });
+
+        int te = 4;
+        long hum = -te + te * 3;
+        if (te >= 4)
+            if (hum < 6) System.out.println("Tooo low");
+            else System.out.println("Just right");
+        else System.out.println("Too high");
     }
+
 
     private static void compareIntegers(Number number) {
         if (number instanceof final Integer data) { // Subtype should never be the same type as parameter (data and number).
