@@ -51,5 +51,14 @@ public class StringBuilderExample {
         stringBuilder.reverse();
         System.out.println(stringBuilder);
 
+        //INTERN method will use object from STRING POOL (JVM stored) if exists
+        var name = "Hello world";
+        var name2 = "Hello world".intern();
+        System.out.println(name == name2); //True
+
+        var name3 = "Hello world";
+        var name4 = "Hello world";
+        System.out.println(name3 == name4); //False
+
     }
 }
