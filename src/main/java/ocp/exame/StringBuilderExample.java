@@ -57,7 +57,7 @@ public class StringBuilderExample {
         System.out.println(name == name2); //True
 
         var name3 = "Hello World";
-        var name4 = "Hello World";
+        var name4 = new String("Hello World");
 
         System.out.println(name4 == name3);
     }
