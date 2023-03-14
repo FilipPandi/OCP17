@@ -56,9 +56,5 @@ public class StringBuilderExample {
         var name2 = "Hello world";
         System.out.println(name == name2); //True
 
-        var name3 = "Hello world";
-        var name4 = "Hello world";
-        System.out.println(name3 == name4); //False
-
     }
 }
