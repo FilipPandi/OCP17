@@ -18,10 +18,10 @@ public class ArraysExamples {
         System.out.println("Search: " + resultOfSearch); // Only works if array is sorted (suggests on witch index to put different elements if element doesn't exist already in array)
 
         //COMPARE
-        System.out.println("Compare: " + Arrays.compare(new int[] {1}, new int[] {2})); //negative means that first array is smaller than sec, zero equals, positive if first is larger.
+        System.out.println("Compare: " + Arrays.compare(new int[] {1}, new int[] {2})); // negative means that first array is smaller than sec, zero equals, positive if first is larger.
 
         //MISMATCH
-        System.out.print("Mismatch: " + Arrays.mismatch(new int[] {1}, new int[] {1}));
+        System.out.print("Mismatch: " + Arrays.mismatch(new int[] {1}, new int[] {1})); // Negative means that arrays are equal, 0 that they are different.
         System.out.print(" " + Arrays.mismatch(new int[] {1, 2}, new int[] {3, 5, 6, 6}));
         System.out.print(" " + Arrays.mismatch(new String[] {"a"}, new String[] {"A"}));
     }
